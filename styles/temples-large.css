@@ -5,13 +5,11 @@
     justify-content: space-around;
   }
 
-  header p {
-    padding: 0;
-  }
   /* Class Selectors */
   .navigation {
     display: flex;
   }
+  
   .navigation li {
     margin: 0.2rem;
   }

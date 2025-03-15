@@ -22,14 +22,12 @@ header {
   background: lightblue;
 }
 
-header p {
-  padding: 25px;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0 20px;
+h1 {
+  padding: 30px;
+  margin: 0;
 }
 
-h1 {
+h2 {
   margin: auto 20px;
   padding: 30px;
 }
