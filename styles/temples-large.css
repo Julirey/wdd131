@@ -1,0 +1,43 @@
+@media screen and (min-width: 720px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header p {
+    padding: 0;
+  }
+  /* Class Selectors */
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    margin: 0.2rem;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 20px;
+    background: lightblue;
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+  }
+
+  .navigation a:hover {
+    background: lightsalmon;
+  }
+
+  /* ID Selectors */
+  #menu {
+    display: none;
+  }
+
+  #temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+}
