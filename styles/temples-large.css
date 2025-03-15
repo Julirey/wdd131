@@ -17,14 +17,14 @@
   .navigation a {
     display: block;
     padding: 20px;
-    background: lightblue;
+    background: var(--primary-color);
     color: black;
     font-size: large;
     border-radius: 10px;
   }
 
   .navigation a:hover {
-    background: lightsalmon;
+    background: var(--secondary-color);
   }
 
   /* ID Selectors */
