@@ -1,0 +1,49 @@
+@media screen and (min-width: 720px) {
+  main {
+    display: grid;
+    grid-template-columns: 4fr 6fr 4fr;
+    grid-template-rows: repeat(4, 10rem);
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  /* Class Selectors */
+  .hero {
+    grid-column: 1/4;
+    grid-row: 1/5;
+  }
+
+  .hero img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card h2 {
+    text-align: left;
+    position: relative;
+    right: 8px;
+  }
+
+  .card:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin-top: 2rem;
+  }
+
+  .card:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    margin-bottom: 2rem;
+  }
+
+  /* ID Selectors */
+  #weather-header::after {
+    content: " ⛅";
+  }
+
+  #weather-icon {
+    display: none;
+  }
+}
