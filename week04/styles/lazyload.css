@@ -1,0 +1,62 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary-color: lightblue;
+}
+
+/* HTML Selectors */
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: whitesmoke;
+}
+
+header, footer {
+  padding: 12px;
+  background: var(--primary-color);
+}
+
+h1 {
+  margin: auto 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+picture {
+  background: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  background: black;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ID Selectors */
+#lastModified {
+  color: #750000;
+}
