@@ -1,0 +1,60 @@
+@media screen and (min-width: 720px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Class Selectors */
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    margin: 0.2rem;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 20px;
+    background: var(--primary-color);
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+  }
+
+  .navigation a:hover,
+  .navigation a.active {
+    background: var(--secondary-color);
+  }
+
+  .active::before,
+  .active::after {
+    content: none;
+  }
+
+  .temple-card {
+    height: 100%;
+    align-content: center;
+  }
+
+  .temple-card img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    max-width: none;
+  }
+
+  /* ID Selectors */
+  #menu {
+    display: none;
+  }
+
+  #temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+  }
+}
