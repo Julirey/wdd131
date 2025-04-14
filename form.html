@@ -20,11 +20,11 @@
     </header>
     <main>
         <form action="review.html" method="get" class="form1">
-            <label>Product Name:
-                <select name="product" id="product" required>
+            <label for="product">Product Name: </label>
+            <select name="product" id="product" required>
                 <option value="" disabled selected>Select a Product...</option>
-                </select>
-            </label>
+            </select>
+            
             <fieldset>
                 <legend>Overall Rating:</legend>
                 <div id="ratings">
@@ -49,10 +49,9 @@
                 <label><input id="design" type="checkbox" name="features" value="design">Design</label>
             </fieldset>
 
-            <label>Write a Review <span class="highlight">(Optional)</span>
-                <textarea id="review" name="review" rows="4" ></textarea>
-            </label>
-
+            <label for="review">Write a Review <span class="highlight">(Optional)</span></label>
+            <textarea name="review" id="review" name="review" rows="4" ></textarea>
+            
             <label>Your Name <span class="highlight">(Optional)</span>
                 <input type="text" id="username" name="username" placeholder="Enter Your Name">
             </label>
