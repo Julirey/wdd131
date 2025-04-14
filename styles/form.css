@@ -1,0 +1,110 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary-color: lightblue;
+  --secondary-color: purple;
+}
+
+/* HTML Selectors */
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+  text-align: left;
+  background: whitesmoke;
+}
+
+header,
+footer {
+  padding: 30px;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+h1 {
+  margin: auto 20px;
+}
+
+main {
+  max-width: 600px;
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Class selectors */
+.form1 {
+    background: rgb(228, 228, 228);
+    padding: 0px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.form1 fieldset {
+  margin: 2rem 0;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 3%;
+}
+
+.form1 label {
+  display: block;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form1 input[type="text"],
+.form1 input[type="date"],
+.form1 select {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+}
+
+.form1 input[type="radio"] {
+  margin-right: 6px;
+}
+
+.form1 input[type="submit"] {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.form1 #review {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.form1 input:required, 
+.form1 select:required {
+  border-right: solid 8px red;
+}
+
+.form1 input:required:valid,
+.form1 select:required:valid {
+  border-right: solid 8px green;
+}
+
+.highlight {
+    color: var(--secondary-color);
+}
+/* ID Selectors */
+#submit:hover {
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: white;
+}
+
+#lastModified {
+  color: #750000;
+}

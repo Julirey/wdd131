@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="WDD 131 - Product Review Form">
+    <meta property="og:type" content="website">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="author" content="Julio Reyes">
+    <meta
+    name="description"
+    content="Website made as an activity showcasing HTML forms.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="form1">
+            <label>Product Name:
+                <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div id="ratings">
+                    <label><input id="rate1" type="radio" name="rating" value="1" required>★</label>
+                    <label><input id="rate2" type="radio" name="rating" value="2">★★</label>
+                    <label><input id="rate3" type="radio" name="rating" value="3">★★★</label>
+                    <label><input id="rate4" type="radio" name="rating" value="4">★★★★</label>
+                    <label><input id="rate5" type="radio" name="rating" value="5">★★★★★</label>
+                </div>
+            </fieldset>
+
+            <label>Date of Installation:
+                <input type="date" id="installation-date" name="installation-date" required>
+            </label>
+
+            <fieldset>
+                <legend>Did you find any feature useful?</legend>
+                <div>(Check all that apply)</div>
+                <label><input id="durability" type="checkbox" name="features" value="durability">Durability</label>
+                <label><input id="ease-of-use" type="checkbox" name="features" value="ease-of-use">Ease of use</label>
+                <label><input id="performance" type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input id="design" type="checkbox" name="features" value="design">Design</label>
+            </fieldset>
+
+            <label>Write a Review <span class="highlight">(Optional)</span>
+                <textarea id="review" name="review" rows="4" ></textarea>
+            </label>
+
+            <label>Your Name <span class="highlight">(Optional)</span>
+                <input type="text" id="username" name="username" placeholder="Enter Your Name">
+            </label>
+
+            <input id="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+<footer>
+<p><span id="copyrightYear">©20XX</span> ☀️ Julio Reyes ☀️ Venezuela</p>
+<p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+</footer>
+</body>
+</html>
