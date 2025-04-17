@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="1st Generation Pokemon Catalogue - Catalogue">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://julirey.github.io/wdd131/project/images/hero-medium.webp">
+        <meta property="og:url" content="https://julirey.github.io/wdd131/project/favorites.html">
+        <title>1st Generation Pokemon Catalogue - Favorites</title>
+        <meta name="author" content="Julio Reyes">
+        <meta 
+            name="description" 
+            content="Favorites page for the 1st Generation Pokemon Catalogue Website Project for the 
+            WDD 131 Course. This page displays a list of all the pokemons saved as favorites in the 
+            localStorage, it has similar sorting capabilities compared to the catalogue page.">
+    
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+    
+        <!-- Javascript -->
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/pokemons.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Pokemon Catalogue ">
+            <p>1st Generation Pokemon Catalogue</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a id="active" href="favorites.html">Favorites</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Favorites</h1>
+        <div id="content-catalogue">
+            <div class="menu">
+                <select id="PsortBy" title="Choose a data filter.">
+                  <option value="" disabled selected>Filter Pokemons</option>
+                  <option value="a-z">A-Z</option>
+                  <option value="z-a">Z-A</option>
+                  <option value="id-asc">ID Ascending</option>
+                  <option value="id-desc">ID Descending</option>
+                </select>
+          
+                <select id="PsortByType" title="Choose a data filter.">
+                  <option value="" disabled selected>Filter Type</option>
+                  <option value="normal">Normal</option>
+                  <option value="fighting">Fighting</option>
+                  <option value="flying">Flying</option>
+                  <option value="poison">Poison</option>
+                  <option value="ground">Ground</option>
+                  <option value="rock">Rock</option>
+                  <option value="bug">Bug</option>
+                  <option value="ghost">Ghost</option>
+                  <option value="steel">Steel</option>
+                  <option value="fire">Fire</option>
+                  <option value="water">Water</option>
+                  <option value="grass">Grass</option>
+                  <option value="electric">Electric</option>
+                  <option value="psychic">Psychic</option>
+                  <option value="ice">Ice</option>
+                  <option value="dragon">Dragon</option>
+                  <option value="fairy">Fairy</option>
+                </select>
+
+                <input type="button" id="clearFavorites" value="Clear Favorites">
+              </div>
+              <div id="pokemon-grid"></div>
+        </div>
+    </main>
+    <footer>
+        <p>1st Generation Pokemon Catalogue <span id="copyrightYear">©20XX</span> | Julio Reyes | WDD131 Project</p>
+        <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+    </footer>
+</body>
+</html>

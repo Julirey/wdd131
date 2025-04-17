@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="1st Generation Pokemon Catalogue - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd131/project/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd131/project/index.html">
+    <title>1st Generation Pokemon Catalogue - Home</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Home page for the 1st Generation Pokemon Catalogue Website Project for the 
+        WDD 131 Course. This page provides welcome interface to the users, and presents them with 
+        multiple ways to navigate to the rest of the pages.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Pokemon Catalogue ">
+            <p>1st Generation Pokemon Catalogue</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Maracaibo Bridge" width="500" height="200" loading="lazy">
+            </picture>
+            <a class="button-box" href="catalogue.html">Enter the catalogue</a>
+        </div>
+        <h1>Home</h1>
+        <div id="content-home">
+            <section class="card">
+                <h2>Did you know?</h2>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Mew was created only two weeks before the Pokémon Red and Green game development was finished. When the game was released in Japan, Mew was a secret character. Even Nintendo had no idea that Mew was in the game.
+                        </li>
+                        <li>
+                            According to Snorlax's Pokédex entry, Snorlax isn't satisfied until it's eaten at least 900 pounds of food each day. Once it feels full, Snorlax goes directly to sleep.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Newsletter</h2>
+                <div class="card-content">
+                    <p>If you want to be up to date with the latest news in the world of Pokemon, including updates in the upcoming games, changes made to the catalogue, simple trivia facts, all in a custom feed of your own design. It is recommended that you join the newsletter down below.</p>
+                    <a class="button-box" href="newsletter.html">Apply for newsletter</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>1st Generation Pokemon Catalogue <span id="copyrightYear">©20XX</span> | Julio Reyes | WDD131 Project</p>
+        <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="1st Generation Pokemon Catalogue - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd131/project/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd131/project/newsletter.html">
+    <title>1st Generation Pokemon Catalogue - Newsletter</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Newsletter page for the 1st Generation Pokemoner Catalogue Website Project for the 
+        WDD 131 Course. This page allows users to fill a form that will sign them up to the website's 
+        newsletter, so as to receive various types of content as per the user's choosing.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Pokemon Catalogue ">
+            <p>1st Generation Pokemon Catalogue</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a id="active" href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Newsletter</h1>
+        <div id="content-newsletter">
+            <h2>Complete the following form to join our newsletter.</h2>
+            <form action="thankyou.html" method="get" class="form1">
+                <fieldset>
+                    <label>First Name* <input type="text" name="fname" id="fname" title="Enter your first name." autocomplete="given-name" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" title="Enter your last name." autocomplete="family-name" required></label>
+                    <label>Email* <input type="email" name="email" id="email" title="Enter your email address." placeholder="example@domain.com"  autocomplete="email" required></label>
+                    
+                        <div>What kinds of news would you like to receive<br>(Check all that apply)</div>
+                        <label><input id="games" type="checkbox" name="news" value="games"> Games</label>
+                        <label><input id="events" type="checkbox" name="news" value="events"> Events</label>
+                        <label><input id="website-changes" type="checkbox" name="news" value="website-changes"> Website Changes</label>
+                        <label><input id="trivia" type="checkbox" name="news" value="trivia"> Trivia</label>
+
+                    <label>Other: (optional)
+                        <textarea name="other" id="other" rows="5" cols="30" title="Enter an optional message" placeholder="Type something you would like to communicate here..."></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="date" id="date" value="0">
+                </fieldset>
+                <input type="submit" id="submit" value="Apply for Newsletter">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>1st Generation Pokemon Catalogue <span id="copyrightYear">©20XX</span> | Julio Reyes | WDD131 Project</p>
+        <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+    </footer>
+</body>
+</html>
